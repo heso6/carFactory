@@ -14,15 +14,6 @@ public class Factory extends Country {
     }
 
 
-    public void getGear(Car car) {
-
-        if (car.isAutomaticGear) {
-            System.out.println("automat");
-        } else {
-            System.out.println("manual");
-        }
-
-    }
 
     public void printAllData() {
         for (Car allCars : cars) {
@@ -37,7 +28,8 @@ public class Factory extends Country {
     }
 
     public void printCountryNameFor(String producerName, boolean isAutomaticGear, int tankCapacity) {
-        System.out.println("\nNazwa producenta: " + producerName + " \nCzy skrzynia jest automatyczna: " + isAutomaticGear + "\nPojemność baku: " + tankCapacity);
+        System.out.println("\nKraje, w których sprzedawane jest auto w wybranej specyfikacji: ");
+        System.out.println("\nNazwa producenta: " + producerName + " \nCzy skrzynia jest automatyczna: " + isAutomaticGear + "\nPojemność baku: " + tankCapacity+ "litrów");
 
         for (Car allCars : cars) {
 
